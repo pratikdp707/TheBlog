@@ -1,13 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.banner-container{
+  padding: auto;
+}
+.banner-text {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.post-container {
+  height: 350px;
+  width: 18rem;
+}
+
+.post-img {
+  height: 150px;
+}
+
+.card-subtitle {
+  color: gray;
+  font-size: 12px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+.input-title, .input-description {
+  border: none;
+  outline: none;
+  width: 90%;
+  resize: none;
+}
+
+.input-category {
+  border: 1px solid #000;
+  outline: none;
+  width: auto;
+}
+
+option {
+  font-family: 'Nunito Sans', sans-serif;
 }
