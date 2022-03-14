@@ -36,3 +36,56 @@
     transform: rotate(360deg);
   }
 }
+
+
+.auth-input {
+  width: 300px;
+  margin: auto;
+  border: 1px solid #fff;
+}
+
+.auth-input::placeholder {
+  color: #212529;
+}
+
+.auth-button {
+  color: #fff;
+}
+
+.auth-link-light {
+  color: gray;
+}
+
+.auth-link{
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  color: #fff;
+}
+
+.auth-container {
+  background-color: #212529;
+  border-radius: 20px;
+  height: auto;
+  width: 400px;
+  margin: auto;
+}
+
+.comment {
+  border-radius: 5px;
+  background-color: rgb(189, 183, 183);
+}
+
+.comment-date {
+  font-size: 13px;
+  color: #53565a;
+  padding-bottom: 2px;
+}
+
+.comment-delete {
+  cursor: pointer;
+}

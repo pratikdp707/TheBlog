@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import userContext from '../context/user/UserContext';
+import { getCookie } from '../helpers/auth';
 import Banner from './Banner';
 import Categories from './Categories';
-import Navbar from './Navbar';
 import Posts from './Posts';
 
-const Home = () => {
+const Home = (props) => {
+
+    const context = useContext(userContext)
+    const { getUser, user } = context;
+    const authToken = getCookie('token');
+
+    useEffect(() => {
+        getUser(authToken);
+        console.log(user)
+        // props.setAuthuser(true);
+    }, [])
+
     return (
         <>
             <Banner />

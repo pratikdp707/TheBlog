@@ -20,8 +20,11 @@ code {
 }
 
 .post-container {
-  height: 350px;
-  width: 18rem;
+  height: auto;
+  width: 100%;
+  background-color: #212529;
+  color: #fff;
+  border-radius: 10px;
 }
 
 .post-img {
@@ -44,7 +47,7 @@ code {
 .input-title, .input-description {
   border: none;
   outline: none;
-  width: 90%;
+  width: 80%;
   resize: none;
 }
 
@@ -56,4 +59,8 @@ code {
 
 option {
   font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn-picture{
+  border-radius: 50%;
 }
