@@ -10,7 +10,6 @@ const PostDetail = () => {
     const {user} = context;
     const [post, setPost] = useState({})
     const { id } = useParams()
-    const url = "https://images.unsplash.com/photo-1543128639-4cb7e6eeef1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwc2V0dXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
     const history = useHistory();
     const deletePostFunc = async (e) => {
         e.preventDefault();
@@ -30,7 +29,6 @@ const PostDetail = () => {
     return (
         <>
             <div className='container mt-2'>
-                <img src={post.picture || url} alt="" style={{ width: "100%", height: "50vh", objectFit: "cover" }} />
                 <div className='py-2 d-flex justify-content-end'>
                     <Link to={`/update/${id}`}><button className={`btn btn-outline-dark btn-sm me-2 ${post.username === user.username.substring(1, user.username.length - 1) ? "" : "d-none"}`}><i className="fas fa-pencil-alt"></i></button></Link>
                     <button className={`btn btn-outline-danger btn-sm me-0 ${post.username === user.username.substring(1, user.username.length - 1) ? "" : "d-none"}`} onClick={deletePostFunc}><i className="fas fa-trash-alt"></i></button>
